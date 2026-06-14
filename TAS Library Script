@@ -202,14 +202,14 @@ function onOutput_TAS(text) {
 
 /////////////////////////////////////////////////////////////////////////////////////
 
-youWords = ["you", "You", "I"];
+youWords = ["you", "You", "I", "Your", "Yours", "your"];
 
 selfWords = ["me", "my", "myself", "mine", "your", "yourself", "yours", "us", "our", "ours", "ourselves"
 ];
 
 castWords = [
   "activate", "amplify", "bind", "blast", "boost", "burst", "cast", "casting", "channel", "charge", "channeling", "command", "commanding", "conjure",
-  "create", "creating", "detonate", "enchant", "enchanting", "evoke", "explode",
+  "create", "creating", "detonate", "enchant", "enchanting", "evoke", "explode", "shoot",
   "expel", "exude", "flare", "flow", "form", "gather", "gathering", "glow", "harness", "hex", "ignite", "infuse", "invoke", "invoking", "launch", "manifest", "project", "projecting", "pulse", "perform", "quicken", "release", "shape", "shift", "summon", "summoning", "transform", "transforming", "transmute", "trigger", "unbind", "unleash"
 ];
 
@@ -247,7 +247,7 @@ talentWords = [
 ];
 
 learnWords = [
-  "learn", "learning", "practice", "practicing", "spend time", "study", "studying", "train", "training", "read", "reading", "focus", "find", "research", "researching"
+  "learn", "learning", "practice", "practicing", "spend time", "study", "studying", "train", "training", "read", "reading", "focus", "find", "research", "researching", "learn"
 ];
 
 equipWords = [
@@ -359,19 +359,19 @@ lightHealWords = [
 ];
 
 // Moderate healing items (more effective healing items)
-moderateHealWords = ["healing", "elixir", "tincture", "small", "bandage", "magic", "oil", "food", "meal", "breakfast", "lunch", "dinner", "delicious"
+moderateHealWords = ["healing", "saline", "tincture", "small", "bandage", "Sulfa", "oil", "food", "meal", "breakfast", "lunch", "dinner", "delicious"
 ];
 
 // Strong healing items (stronger healing items for larger wounds)
-strongHealWords = ["large", "larger", "strong", "big", "scroll", "balm", "alcohol", "cream"
+strongHealWords = ["large", "larger", "strong", "big", "Iodine", "balm", "alcohol", "Tourniquet"
 ];
 
 // Intense healing items (used for serious injuries or magical healing)
-greatHealWords = ["superior", "life elixir", "antibacterial", "vitality", "greater", "great", "rare"
+greatHealWords = ["superior", "defilibration", "antibacterial", "sterilize", "greater", "great", "rare"
 ];
 
 // Powerful healing items (used for critical injuries or to restore near full health)
-powerfulHealWords = ["immortality", "crystal", "revival", "divine", "surgery", "enchanted", "powerful", "extremely", "extreme", "mystical", "legendary"
+powerfulHealWords = ["blood transfusion", "plasma transfusion", "IV", "morphaine", "surgery", "enchanted", "powerful", "extremely", "extreme", "cocaine", "legendary"
 ];
 
 dialoguePhrases = ["You say", "You tell", "You add", "You ask", "You reply", "You state", "You note", "You claim", "You remark", "You mutter", "You insist", "You whisper", "You mention", "You declare", "You respond", "You warn", "You said", "You see", "You hear"];
@@ -401,7 +401,7 @@ notEnoughPhrases = [
   "A flicker of [Thing] exerts itself, but your [Stat] can’t sustain it."
 ];
 
-attackWords = ["attack", "ambush", "bash", "batter", "bite", "bludgeon", "chop", "claw", "cleave", "club", "crack", "crush", "flail", "fling", "gouge", "hack", "impale", "jab", "kick", "lunge", "maul", "pound", "pummel", "pierce", "punch", "ram", "rend", "shred", "slash", "slam", "slice", "smash", "stab", "strike", "swipe", "swing", "smack", "thrust", "whack", "wreck"];
+attackWords = ["attack", "ambush", "bash", "batter", "bite", "bludgeon", "chop", "claw", "cleave", "club", "crack", "crush", "flail", "fling", "gouge", "hack", "impale", "jab", "kick", "lunge", "maul", "pound", "pummel", "pierce", "punch", "ram", "rend", "shred", "slash", "slam", "slice", "smash", "stab", "strike", "swipe", "swing", "smack", "thrust", "shoot", "bayonet", "whack", "wreck"];
 
 const attackTier1 = [
   "A hesitant impact leaves a soft but clear mark.",
@@ -1083,7 +1083,7 @@ fullExhaustionArray = [
   "you hear your own heartbeat pounding in your skull, heavy and strained."
 ];
 
-enterWords = ["crawl", "drift", "enter", "fall", "get", "go", "head", "lay", "lie down", "make", "move", "nap", "prepare", "proceed", "slip", "sleep", "settle", "sink", "snuggle", "step", "surrender", "take", "turn in", "transition"];
+enterWords = ["crawl", "drift", "enter", "fall", "get", "go", "head", "lay", "lie down", "make", "move", "nap", "prepare", "proceed", "slip", "sleep", "settle", "sink", "snuggle", "step", "surrender", "take", "turn in", "transition", "rush into", "barge"];
 
 restingWords = ["catnap", "doze", "hibernate", "nap", "relax", "rest", "sleep", "slumber", "asleep"];
 
@@ -1102,7 +1102,7 @@ bodyParts = [
   "lips", "liver", "lungs", "lung", "lower back", "nape", "neck", "nose", "palm", "pancreas", "pelvis",
   "quadriceps", "ribs", "scapula", "shin", "shinbone", "shoulder", "side", "skull", "solar plexus",
   "spine", "spleen", "stomach", "sternum", "tailbone", "teeth", "temple", "thigh", "throat", "thumb",
-  "toes", "triceps", "upper back", "veins", "waist", "wrist", "wound", "windpipe",
+  "toes", "triceps", "upper back", "veins", "waist", "wrist", "wound", "windpipe", "brain", "palm", "femur"
 
   // Fantasy/Sci-Fi Races
   "antlers", "barb", "beak", "carapace", "chitin", "claw", "crest", "eye stalk", "fang", "feathers",
